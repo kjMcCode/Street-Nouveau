@@ -1,0 +1,620 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url('Background Cracks.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 500px, 500px; */
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    margin: 0px;
+}
+
+p {
+    font-family: swiss-721-bt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    /* margin: 20px; */
+}
+
+h1 {
+    font-family: agency-fb, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 4rem;
+    /* margin-top: 20px; */
+}
+
+h2 {
+    font-family: agency-fb, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.3rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /* margin: 20px; */
+}
+
+h3 {
+    font-family: agency-fb, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /* margin: 20px; */
+}
+
+/* header css */
+
+header {
+    margin: 0;
+    padding: 0;
+
+    background-image: url('Background Cracks.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 500px, 500px;
+    background-color: rgb(0, 0, 0);
+    border-bottom: rgb(255, 0, 164) solid 5px;
+
+/*  display: flex;
+    background-image: url('Background Cracks.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 500px, 500px;
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    border-bottom: rgb(255, 0, 164) solid 5px; */
+}
+
+.hamburger {
+    display: block;
+    margin: 1rem auto;
+    width: fit-content;
+    padding: 1rem;
+}
+
+.hamburger, .close {
+    font-size: 2rem;
+    color:#ffffff
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    background-image: url('Background Cracks.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 500px, 500px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    /* animate - slide up and down */
+
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+
+
+    /* display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2vw; */
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+nav:target {
+  transform: translateY(0);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 100%; */
+    /* border:rgb(255, 0, 164) solid 2px; */
+
+    /* gap: 2vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+/* nav ul li {
+    display: flex;
+    height: 100%;
+    padding: 0px;
+    /* align-items: center; */
+    /* border: 1px solid hsl(0, 97%, 44%); 
+} */
+
+nav ul a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: agency-fb, sans-serif;
+    font-weight: 700;
+    font-style: roman;
+    font-size: 1.5rem;
+
+    /* height: 100%; */
+    /* width: auto; */
+    
+    /* padding: 0px;
+    justify-content: center; */
+
+    /* border:rgb(54, 164, 178) solid 2px; */
+}
+
+nav a:hover {
+    color: rgb(255, 0, 164);
+    /* border:rgb(255, 0, 164) solid 2px; */
+}
+
+.close {
+  background-color: transparent;
+}
+
+.close:hover, .hamburger:hover {
+  color:rgb(255, 0, 164);
+}
+
+@media screen and (min-width: 650px) {
+  header, nav {
+    padding: 0;
+    position: static;
+    height: auto;
+    transform: translateY(0);
+  }
+  .hamburger, .close {
+    display: none;
+  }
+  nav ul {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.active {
+    color: rgb(154, 255, 186);
+    /* color: rgb(255, 0, 166); */
+}
+
+.cart {
+    height: 40px;
+    width: auto;
+    /* border:rgb(255, 255, 255) solid 2px; */
+}
+
+.logo {
+    /* display: flex; */
+    /* align-items: center; */
+    height: 100px;
+    width: auto;
+    /* border:rgb(255, 255, 255) solid 2px; */
+}
+
+.ItemShowcaseMain {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+    flex: 1;
+}
+
+/* footer css */
+
+footer {
+    display: flex;
+
+    background-image: url('Background Cracks.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 500px, 500px;
+    background-color: rgb(0, 0, 0);
+
+    margin: 0px;
+    margin-top: 50px;
+    padding: 30px;
+    gap: 10px;
+
+    width: 100vw;
+    /* height: 150px; */
+
+    align-items: center;
+    justify-content: left;
+
+    border-top: rgb(255, 0, 164) solid 5px;
+}
+
+.footerLogo {
+    /* display: flex; */
+    /* align-items: center; */
+    height: 50px;
+    width: auto;
+    /* border:rgb(255, 255, 255) solid 2px; */
+}
+
+.footerTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.siteMap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+    /* border:rgb(255, 255, 255) solid 2px; */
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    /* justify-content: center; */
+    gap: 2vw;
+    width: 100%;
+    height: auto;
+    /* border:rgb(255, 255, 255) solid 2px; */
+}
+
+footer ul li {
+    
+    font-family: swiss-721-bt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer ul li a {
+    text-decoration: underline;
+    color:rgb(154, 255, 186);
+}
+
+footer p {
+    font-family: swiss-721-bt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    /* border:rgb(255, 255, 255) solid 2px; */
+    width: 100%;
+}
+
+.linksContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: auto;
+    /* border:rgb(255, 255, 255) solid 2px; */
+
+}
+
+.NestedLink {
+    font-family: swiss-721-bt, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    /* border:rgb(255, 255, 255) solid 2px; */
+    width: 100%;
+}
+
+/* Top Highlights Styles */
+
+
+.topHighlights {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2vw;
+    /* margin-top: 50px; */
+    padding: 20px;
+
+    border-top:rgb(255,0,166) solid 5px;
+    border-bottom:rgb(255, 0, 166) solid 5px;
+
+    background-image: url('Background Cracks.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 500px, 500px;
+    background-color:rgb(154, 255, 186);    
+}
+
+@media (max-width: 768px) {
+    .topHighlights {
+        flex-flow: column;
+    }
+}
+
+.topHighlightsContentContainer {
+    display: flex;
+    flex-flow: column;
+    justify-items: center;
+    align-items: center;
+    width: auto;
+    gap: 20px;
+    /* border:rgb(0, 0, 0) solid 2px; */
+}
+
+.topHighlightsHeader {
+    color:rgb(0, 0, 0);
+    text-align: center;
+    font-size: 3rem;
+    /* border:rgb(0, 0, 0) solid 2px; */
+}
+
+.topHighlightsDate {
+    font-family: agency-fb, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    /* border:rgb(0, 0, 0) solid 2px; */
+}
+
+.topHighlightsContent {
+    font-family: agency-fb, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+    color:rgb(255, 0, 164);
+    /* border:rgb(0, 0, 0) solid 2px; */
+}
+
+.topHighlightsIndivContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    /* border:rgb(0, 0, 0) solid 2px; */
+}
+
+.topHighlightsItemsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    width: auto;
+    /* border:rgb(0, 0, 0) solid 2px; */
+}
+
+.topHighlightsImage {
+    height: 300px;
+    width: auto;
+    border:rgb(255, 255, 255) solid 5px;
+    border-radius: 10px;
+     /* border:rgb(0, 0, 0) solid 2px; */
+}
+
+/* Apparel and Accessories Styles */
+
+.ItemShowcaseContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    width: 100vw;
+    padding: 20px;
+    
+    border-top:rgb(255,0,166) solid 5px;
+    border-bottom:rgb(255, 0, 166) solid 5px;
+
+    background-image: url('Background Cracks.svg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 500px, 500px;
+    background-color:rgb(154, 255, 186);
+}
+
+@media (max-width: 800px) {
+    .ItemShowcaseContainer {
+        flex-flow: column;
+    }
+}
+
+.indivItemShowcaseContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.56);
+    border:rgb(255, 255, 255) solid 5px;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.ItemShowcaseImage {
+    height: 250px;
+    width: auto;
+    /* margin: 20px; */
+    
+    border-bottom:rgb(255, 255, 255) solid 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* border:rgb(255, 255, 255) solid 5px; */
+}
+
+.Price {
+    font-family: agency-fb, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+    color:rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.addToCart {
+    display: block;
+    background-color:rgb(255, 0, 164);
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-family: agency-fb, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.addToCart:hover {
+    color:rgb(154, 255, 186);
+    /* border:rgb(255, 0, 164) solid 5px; */
+}
+
+/* About Us Styles */
+
+.AboutUsMain {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+
+}
+
+@media (min-width: 800px) {
+    .AboutUsMain {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+
+.AboutLogo {
+    width: 60vw;
+    height: auto;
+}
+
+@media (min-width: 1000px) {
+    .AboutLogo {
+        width: 30vw;
+    }
+}
+
+/* Contact Us Styles */
+
+.ContactUsMain {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+    flex: 1;
+
+}
+
+@media (min-width: 800px) {
+    .ContactUsMain {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+
+.ContactUsInfoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    /* border:rgb(0, 0, 0) solid 2px; */
+}
+
+.ContactUsInfoContainer p {
+    height: 23px;
+}
+
+.ContactUsLogo {
+    width: 60vw;
+    height: auto;
+    /* border:rgb(0, 0, 0) solid 2px; */
+}
+
+@media (min-width: 1000px) {
+    .ContactUsLogo {
+        width: 30vw;
+    }
+}
+
+/* Cart CSS */
+
+.CartMain {
+    display: flex;
+    flex: 1;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+}
+
+@media (min-width: 800px) {
+    .CartMain {
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
+}
+
+.CartMain a {
+    text-decoration: underline;
+    color:rgb(0, 218, 131);
+}
+
+/* .CartInfoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+} */
+
+.CartLogo {
+    width: 60vw;
+    height: auto;
+    /* border:rgb(0, 0, 0) solid 2px; */
+}
+
+@media (min-width: 1000px) {
+    .CartLogo {
+        width: 30vw;
+    }
+}
+
